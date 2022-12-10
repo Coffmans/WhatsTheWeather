@@ -1,0 +1,51 @@
+{
+  "count": 1,
+  "data": [
+    {
+      "app_temp": -12.4,
+      "aqi": 16,
+      "city_name": "Kearney",
+      "clouds": 87,
+      "country_code": "US",
+      "datetime": "2022-12-08:13",
+      "dewpt": -11.1,
+      "dhi": 13.98,
+      "dni": 72.88,
+      "elev_angle": 1.14,
+      "ghi": 7.68,
+      "gust": 3.2792969,
+      "h_angle": -90,
+      "lat": 40.6861,
+      "lon": -99.0693,
+      "ob_time": "2022-12-08 13:53",
+      "pod": "d",
+      "precip": null,
+      "pres": 943.5,
+      "rh": 90,
+      "slp": 1026.397,
+      "snow": null,
+      "solar_rad": 3.8,
+      "sources": [
+        "rtma"
+      ],
+      "state_code": "NE",
+      "station": "D1352",
+      "sunrise": "13:47",
+      "sunset": "23:09",
+      "temp": -10,
+      "timezone": "America/Chicago",
+      "ts": 1670507594,
+      "uv": 0.49967644,
+      "vis": 5,
+      "weather": {
+        "description": "Fog",
+        "code": 741,
+        "icon": "a05d"
+      },
+      "wind_cdir": "NE",
+      "wind_cdir_full": "northeast",
+      "wind_dir": 41,
+      "wind_spd": 1.1981488
+    }
+  ]
+}

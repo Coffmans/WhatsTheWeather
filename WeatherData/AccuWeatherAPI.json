@@ -1,0 +1,23 @@
+{
+  "LocalObservationDateTime": "2022-12-08T08:05:00-07:00",
+  "EpochTime": 1670511900,
+  "WeatherText": "Cloudy",
+  "WeatherIcon": 7,
+  "HasPrecipitation": false,
+  "PrecipitationType": null,
+  "IsDayTime": true,
+  "Temperature": {
+    "Metric": {
+      "Value": -6.7,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "Imperial": {
+      "Value": 20.0,
+      "Unit": "F",
+      "UnitType": 18
+    }
+  },
+  "MobileLink": "http://www.accuweather.com/en/us/ogallala-ne/69153/current-weather/30181_pc?lang=en-us",
+  "Link": "http://www.accuweather.com/en/us/ogallala-ne/69153/current-weather/30181_pc?lang=en-us"
+}
