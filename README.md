@@ -1,4 +1,4 @@
-# WhatsTheWeather
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=9A1DF7&size=24&center=true&width=1000&lines=What's+The+Weather+-+Get+The+Current+Temperature)](https://git.io/typing-svg)
 
 ![image](https://user-images.githubusercontent.com/8136145/206906754-a005a5ad-7ee7-4193-9403-135baa49c61d.png)
 
