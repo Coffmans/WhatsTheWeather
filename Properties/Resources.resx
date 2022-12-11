@@ -196,4 +196,58 @@ Are you sure you want to continue?</value>
   <data name="Exception" xml:space="preserve">
     <value>Exception</value>
   </data>
+  <data name="Settings_AccuWeatherApiKey" xml:space="preserve">
+    <value>AccuWeatherApiKey</value>
+  </data>
+  <data name="Settings_OpenWeatherApiKey" xml:space="preserve">
+    <value>OpenWeatherApiKey</value>
+  </data>
+  <data name="Settings_PostalCode" xml:space="preserve">
+    <value>PostalCode</value>
+  </data>
+  <data name="Settings_SelectedWeatherProvider" xml:space="preserve">
+    <value>WeatherSelection</value>
+  </data>
+  <data name="Settings_VisualCrossingApiKey" xml:space="preserve">
+    <value>VisualCrossingApiKey</value>
+  </data>
+  <data name="Settings_WeatherApiApiKey" xml:space="preserve">
+    <value>WeatherApiApiKey</value>
+  </data>
+  <data name="Settings_WeatherBitApiKey" xml:space="preserve">
+    <value>WeatherBitApiKey</value>
+  </data>
+  <data name="Settings_WeatherHourlyPollTimer" xml:space="preserve">
+    <value>WeatherHourlyPollTimer</value>
+  </data>
+  <data name="Settings_WeatherShowBalloon" xml:space="preserve">
+    <value>WeatherShowBalloon</value>
+  </data>
+  <data name="Settings_WeatherUnlockedAppId" xml:space="preserve">
+    <value>WeatherUnlockedAppId</value>
+  </data>
+  <data name="Settings_WeatherUnlockedAppKey" xml:space="preserve">
+    <value>WeatherUnlockedAppKey</value>
+  </data>
+  <data name="Settings_WeatherZipCode" xml:space="preserve">
+    <value>WeatherZipCode</value>
+  </data>
+  <data name="Url_Api_Key" xml:space="preserve">
+    <value>{API_KEY}</value>
+  </data>
+  <data name="Url_Postal_Code" xml:space="preserve">
+    <value>{POSTAL_CODE}</value>
+  </data>
+  <data name="WhatsTheWeatherMainWindow_VerifyValues_Please_enter_a_valid_zip_code_" xml:space="preserve">
+	  <value>Please enter a valid zip code!</value>
+  </data>
+  <data name="WhatsTheWeatherMainWindow_VerifyValues_Please_select_a_valid_weather_provider_" xml:space="preserve">
+	  <value>Please select a valid weather provider!</value>
+  </data>
+  <data name="WhatsTheWeatherMainWindow_InvokePollingProcess_Start" xml:space="preserve">
+	  <value>Start</value>
+  </data>
+  <data name="WhatsTheWeatherMainWindow_InvokePollingProcess_Stop" xml:space="preserve">
+	  <value>Stop</value>
+  </data>
 </root>

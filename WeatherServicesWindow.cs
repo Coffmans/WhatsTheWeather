@@ -13,8 +13,7 @@ namespace WhatsTheWeather
 {
     public partial class WeatherServicesWindow : Form
     {
-        public AppSettings WeatherServiceSettings = new AppSettings();
-        public DialogResult dialogResult = DialogResult.Cancel;
+        public AppSettings WeatherServiceSettings;
 
         public WeatherServicesWindow(AppSettings serviceSettings)
         {
@@ -26,6 +25,8 @@ namespace WhatsTheWeather
         private void WeatherServicesWindow_Load(object sender, EventArgs e)
         {
             LoadWeatherServices();
+            numPollForWeatherTimer.Value = WeatherServiceSettings.WeatherHourlyPollTimer;
+            chkShowBalloonTip.Checked = WeatherServiceSettings.WeatherShowBalloon;
         }
 
         private void LoadWeatherServices()
@@ -110,6 +111,7 @@ namespace WhatsTheWeather
 
         private void btnCancelWeatherServices_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.Cancel;
             Close();
         }
 
@@ -134,7 +136,7 @@ namespace WhatsTheWeather
                     return false;
                 }
 
-                WeatherServiceSettings.AccuWeatherApiKey = "";
+                WeatherServiceSettings.AccuWeatherApiKey = string.Empty;
             }
             else
             {
@@ -163,7 +165,7 @@ namespace WhatsTheWeather
                     return false;
                 }
 
-                WeatherServiceSettings.OpenWeatherApiKey = "";
+                WeatherServiceSettings.OpenWeatherApiKey = string.Empty;
             }
             else
             {
@@ -191,7 +193,7 @@ namespace WhatsTheWeather
                 {
                     return false;
                 }
-                WeatherServiceSettings.VisualCrossingApiKey = "";
+                WeatherServiceSettings.VisualCrossingApiKey = string.Empty;
             }
             else
             {
@@ -219,7 +221,7 @@ namespace WhatsTheWeather
                 {
                     return false;
                 }
-                WeatherServiceSettings.WeatherApiApiKey = "";
+                WeatherServiceSettings.WeatherApiApiKey = string.Empty;
             }
             else
             {
@@ -247,7 +249,7 @@ namespace WhatsTheWeather
                 {
                     return false;
                 }
-                WeatherServiceSettings.WeatherUnlockedAppId = "";
+                WeatherServiceSettings.WeatherUnlockedAppId = string.Empty;
             }
             else
             {
@@ -275,7 +277,7 @@ namespace WhatsTheWeather
                 {
                     return false;
                 }
-                WeatherServiceSettings.WeatherBitApiKey = "";
+                WeatherServiceSettings.WeatherBitApiKey = string.Empty;
             }
             else
             {
@@ -292,6 +294,9 @@ namespace WhatsTheWeather
                 }
 
             }
+
+            WeatherServiceSettings.WeatherHourlyPollTimer = (int)numPollForWeatherTimer.Value;
+            WeatherServiceSettings.WeatherShowBalloon = chkShowBalloonTip.Checked;
 
             return true;
         }

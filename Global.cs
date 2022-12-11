@@ -117,6 +117,9 @@ namespace WhatsTheWeather
         public string? WeatherUnlockedAppId { get; set; }
         public string? WeatherUnlockedAppKey { get; set; }
         public string? WeatherBitApiKey { get; set; }
+        public int WeatherHourlyPollTimer { get; set; } = 1;
+        public bool WeatherShowBalloon { get; set; } = false;
+        public string? WeatherZipCode { get; set; } 
 
         public WeatherServiceFlags WeatherSelection { get; set; }
 

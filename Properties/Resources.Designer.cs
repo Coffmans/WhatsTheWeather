@@ -124,6 +124,132 @@ namespace WhatsTheWeather.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AccuWeatherApiKey.
+        /// </summary>
+        internal static string Settings_AccuWeatherApiKey {
+            get {
+                return ResourceManager.GetString("Settings_AccuWeatherApiKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OpenWeatherApiKey.
+        /// </summary>
+        internal static string Settings_OpenWeatherApiKey {
+            get {
+                return ResourceManager.GetString("Settings_OpenWeatherApiKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PostalCode.
+        /// </summary>
+        internal static string Settings_PostalCode {
+            get {
+                return ResourceManager.GetString("Settings_PostalCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WeatherSelection.
+        /// </summary>
+        internal static string Settings_SelectedWeatherProvider {
+            get {
+                return ResourceManager.GetString("Settings_SelectedWeatherProvider", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VisualCrossingApiKey.
+        /// </summary>
+        internal static string Settings_VisualCrossingApiKey {
+            get {
+                return ResourceManager.GetString("Settings_VisualCrossingApiKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WeatherApiApiKey.
+        /// </summary>
+        internal static string Settings_WeatherApiApiKey {
+            get {
+                return ResourceManager.GetString("Settings_WeatherApiApiKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WeatherBitApiKey.
+        /// </summary>
+        internal static string Settings_WeatherBitApiKey {
+            get {
+                return ResourceManager.GetString("Settings_WeatherBitApiKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WeatherHourlyPollTimer.
+        /// </summary>
+        internal static string Settings_WeatherHourlyPollTimer {
+            get {
+                return ResourceManager.GetString("Settings_WeatherHourlyPollTimer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WeatherShowBalloon.
+        /// </summary>
+        internal static string Settings_WeatherShowBalloon {
+            get {
+                return ResourceManager.GetString("Settings_WeatherShowBalloon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WeatherUnlockedAppId.
+        /// </summary>
+        internal static string Settings_WeatherUnlockedAppId {
+            get {
+                return ResourceManager.GetString("Settings_WeatherUnlockedAppId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WeatherUnlockedAppKey.
+        /// </summary>
+        internal static string Settings_WeatherUnlockedAppKey {
+            get {
+                return ResourceManager.GetString("Settings_WeatherUnlockedAppKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WeatherZipCode.
+        /// </summary>
+        internal static string Settings_WeatherZipCode {
+            get {
+                return ResourceManager.GetString("Settings_WeatherZipCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {API_KEY}.
+        /// </summary>
+        internal static string Url_Api_Key {
+            get {
+                return ResourceManager.GetString("Url_Api_Key", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {POSTAL_CODE}.
+        /// </summary>
+        internal static string Url_Postal_Code {
+            get {
+                return ResourceManager.GetString("Url_Postal_Code", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/{POSTAL_CODE}/today?include=fcst&amp;key={API_KEY}&amp;contentType=json.
         /// </summary>
         internal static string VisualCrossingAPI {
@@ -279,6 +405,42 @@ namespace WhatsTheWeather.Properties {
         internal static string WeatherUnlockedAPI {
             get {
                 return ResourceManager.GetString("WeatherUnlockedAPI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start.
+        /// </summary>
+        internal static string WhatsTheWeatherMainWindow_InvokePollingProcess_Start {
+            get {
+                return ResourceManager.GetString("WhatsTheWeatherMainWindow_InvokePollingProcess_Start", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop.
+        /// </summary>
+        internal static string WhatsTheWeatherMainWindow_InvokePollingProcess_Stop {
+            get {
+                return ResourceManager.GetString("WhatsTheWeatherMainWindow_InvokePollingProcess_Stop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter a valid zip code!.
+        /// </summary>
+        internal static string WhatsTheWeatherMainWindow_VerifyValues_Please_enter_a_valid_zip_code_ {
+            get {
+                return ResourceManager.GetString("WhatsTheWeatherMainWindow_VerifyValues_Please_enter_a_valid_zip_code_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please select a valid weather provider!.
+        /// </summary>
+        internal static string WhatsTheWeatherMainWindow_VerifyValues_Please_select_a_valid_weather_provider_ {
+            get {
+                return ResourceManager.GetString("WhatsTheWeatherMainWindow_VerifyValues_Please_select_a_valid_weather_provider_", resourceCulture);
             }
         }
     }

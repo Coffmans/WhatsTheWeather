@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WhatsTheWeatherMainWindow));
             this.cbWeatherService = new System.Windows.Forms.ComboBox();
             this.btnTestWeatherService = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -35,22 +37,23 @@
             this.txtZipCode = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnWeatherProviders = new System.Windows.Forms.Button();
             this.btnStartPollForWeather = new System.Windows.Forms.Button();
+            this.notifySystemTrayIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.btnConfiguration = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cbWeatherService
             // 
             this.cbWeatherService.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbWeatherService.FormattingEnabled = true;
-            this.cbWeatherService.Location = new System.Drawing.Point(130, 40);
+            this.cbWeatherService.Location = new System.Drawing.Point(125, 40);
             this.cbWeatherService.Name = "cbWeatherService";
             this.cbWeatherService.Size = new System.Drawing.Size(206, 23);
             this.cbWeatherService.TabIndex = 17;
             // 
             // btnTestWeatherService
             // 
-            this.btnTestWeatherService.Location = new System.Drawing.Point(342, 39);
+            this.btnTestWeatherService.Location = new System.Drawing.Point(337, 40);
             this.btnTestWeatherService.Name = "btnTestWeatherService";
             this.btnTestWeatherService.Size = new System.Drawing.Size(53, 23);
             this.btnTestWeatherService.TabIndex = 16;
@@ -100,31 +103,38 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Select A Weather Provider";
             // 
-            // btnWeatherProviders
-            // 
-            this.btnWeatherProviders.Location = new System.Drawing.Point(413, 88);
-            this.btnWeatherProviders.Name = "btnWeatherProviders";
-            this.btnWeatherProviders.Size = new System.Drawing.Size(177, 23);
-            this.btnWeatherProviders.TabIndex = 10;
-            this.btnWeatherProviders.Text = "Configure Providers";
-            this.btnWeatherProviders.UseVisualStyleBackColor = true;
-            this.btnWeatherProviders.Click += new System.EventHandler(this.btnWeatherProviders_Click);
-            // 
             // btnStartPollForWeather
             // 
-            this.btnStartPollForWeather.Location = new System.Drawing.Point(8, 97);
+            this.btnStartPollForWeather.Location = new System.Drawing.Point(213, 78);
             this.btnStartPollForWeather.Name = "btnStartPollForWeather";
-            this.btnStartPollForWeather.Size = new System.Drawing.Size(143, 23);
+            this.btnStartPollForWeather.Size = new System.Drawing.Size(177, 23);
             this.btnStartPollForWeather.TabIndex = 18;
             this.btnStartPollForWeather.Text = "Start";
             this.btnStartPollForWeather.UseVisualStyleBackColor = true;
             this.btnStartPollForWeather.Click += new System.EventHandler(this.btnStartPollForWeather_Click);
             // 
+            // notifySystemTrayIcon
+            // 
+            this.notifySystemTrayIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifySystemTrayIcon.Icon")));
+            this.notifySystemTrayIcon.Text = "What\'s The Weather";
+            this.notifySystemTrayIcon.Visible = true;
+            this.notifySystemTrayIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifySystemTrayIcon_MouseDoubleClick);
+            // 
+            // btnConfiguration
+            // 
+            this.btnConfiguration.Location = new System.Drawing.Point(8, 78);
+            this.btnConfiguration.Name = "btnConfiguration";
+            this.btnConfiguration.Size = new System.Drawing.Size(100, 23);
+            this.btnConfiguration.TabIndex = 10;
+            this.btnConfiguration.Text = "Settings";
+            this.btnConfiguration.UseVisualStyleBackColor = true;
+            this.btnConfiguration.Click += new System.EventHandler(this.btnWeatherProviders_Click);
+            // 
             // WhatsTheWeatherMainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(613, 132);
+            this.ClientSize = new System.Drawing.Size(602, 118);
             this.Controls.Add(this.btnStartPollForWeather);
             this.Controls.Add(this.cbWeatherService);
             this.Controls.Add(this.btnTestWeatherService);
@@ -133,10 +143,12 @@
             this.Controls.Add(this.txtZipCode);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnWeatherProviders);
+            this.Controls.Add(this.btnConfiguration);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WhatsTheWeatherMainWindow";
             this.Text = "What\'s The Weather";
             this.Load += new System.EventHandler(this.WhatsTheWeatherMainWindow_Load);
+            this.Resize += new System.EventHandler(this.WhatsTheWeatherMainWindow_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,7 +163,8 @@
         private TextBox txtZipCode;
         private Label label2;
         private Label label1;
-        private Button btnWeatherProviders;
         private Button btnStartPollForWeather;
+        private NotifyIcon notifySystemTrayIcon;
+        private Button btnConfiguration;
     }
 }
